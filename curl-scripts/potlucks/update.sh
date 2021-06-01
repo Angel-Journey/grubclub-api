@@ -1,7 +1,7 @@
 #!/bin/bash
 
 API="http://localhost:4741"
-URL_PATH="/posts"
+URL_PATH="/potlucks"
 
 curl "${API}${URL_PATH}/${ID}" \
   --include \
@@ -9,9 +9,13 @@ curl "${API}${URL_PATH}/${ID}" \
   --header "Content-Type: application/json" \
   --header "Authorization: Bearer ${TOKEN}" \
   --data '{
-      "post": {
-        "body": "'"${BODY}"'"
-      }
-    }'
+    "potluck": {
+      "title": "'"${TITLE}"'",
+      "host": "'"${HOST}"'",
+      "location": "'"${LOCATION}"'",
+      "date": "'"${DATE}"'",
+      "body": "'"${BODY}"'"
+    }
+  }'
 
 echo

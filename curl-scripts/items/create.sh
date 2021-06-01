@@ -1,7 +1,7 @@
 #!/bin/sh
 
 API="http://localhost:4741"
-URL_PATH="/posts"
+URL_PATH="/items"
 
 curl "${API}${URL_PATH}" \
   --include \
@@ -9,9 +9,9 @@ curl "${API}${URL_PATH}" \
   --header "Content-Type: application/json" \
   --header "Authorization: Bearer ${TOKEN}" \
   --data '{
-    "post": {
-      "title": "'"${TITLE}"'",
-      "body": "'"${BODY}"'"
+    "item": {
+      "name": "'"${NAME}"'",
+      "potluckID": "'"${POT_ID}"'"
     }
   }'
 
