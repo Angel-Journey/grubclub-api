@@ -18,7 +18,7 @@ Brainstormed CRUD-based ideas and reflected on how easier it would be to have on
 - As a user I want to be able to change my password when logged in
 - As a user I want to be able to sign out when signed in
 - As a user I want to be able to add a Potluck post
-- As a user I want to be able to add an Item post to a potluck thread
+- As a user I want to be able to add an Item post to a Potluck thread
 - As a user I want to review the posts I have made
 - As a user I want to be able to update a post I own when logged in
 - As a user I want to be able to delete a post I own when logged in
