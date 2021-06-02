@@ -16,7 +16,10 @@ router.post('/items', requireToken, (req, res, next) => {
   const item = req.body.item
   console.log('Potluck is ' + req.body.item.potluckID)
   const potluckID = req.body.item.potluckID
-  console.log(req.body.item)
+  req.body.item.owner = req.user.id
+  req.body.item.ownerEmail = req.user.email
+  console.log('Owner is ' + req.body.item.owner)
+  console.log('Owner email is ' + req.body.item.ownerEmail)
   Potluck.findById(potluckID)
     .then(handle404)
     .then(potluck => {
