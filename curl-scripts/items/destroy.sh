@@ -1,18 +1,10 @@
-#!/bin/sh
-
-API="http://localhost:4741"
-URL_PATH="/items"
-
-curl "${API}${URL_PATH}" \
+curl "http://localhost:4741/items/${ITEM_ID}" \
   --include \
-  --request POST \
+  --request DELETE \
   --header "Content-Type: application/json" \
   --header "Authorization: Bearer ${TOKEN}" \
   --data '{
     "item": {
-      "name": "'"${NAME}"'",
       "potluckId": "'"${POT_ID}"'"
     }
   }'
-
-echo
