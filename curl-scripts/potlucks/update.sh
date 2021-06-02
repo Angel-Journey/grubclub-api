@@ -11,7 +11,6 @@ curl "${API}${URL_PATH}/${ID}" \
   --data '{
     "potluck": {
       "title": "'"${TITLE}"'",
-      "host": "'"${HOST}"'",
       "location": "'"${LOCATION}"'",
       "date": "'"${DATE}"'",
       "body": "'"${BODY}"'"
