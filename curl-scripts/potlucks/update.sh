@@ -13,6 +13,7 @@ curl "${API}${URL_PATH}/${ID}" \
       "title": "'"${TITLE}"'",
       "location": "'"${LOCATION}"'",
       "date": "'"${DATE}"'",
+      "time": "'"${TIME}"'",
       "body": "'"${BODY}"'"
     }
   }'
