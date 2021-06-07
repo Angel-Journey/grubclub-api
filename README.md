@@ -64,9 +64,3 @@ Brainstormed CRUD-based ideas and reflected on how easier it would be to have on
 | POST  | /items  |
 | DELETE  | /items/:id  |
 | PATCH  | /items/:id  |
-
-## [License](LICENSE)
-
-1. All content is licensed under a CC­BY­NC­SA 4.0 license.
-1. All software code is licensed under GNU GPLv3. For commercial use or
-    alternative licensing, please contact legal@ga.co.
